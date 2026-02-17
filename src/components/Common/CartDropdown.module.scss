@@ -1,0 +1,166 @@
+@import '../../styles/variables.scss';
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 400px;
+  max-height: 600px;
+  background: $color-bg-white;
+  border: 1px solid $color-gray-2;
+  border-radius: $radius-12;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: $spacing-20;
+  border-bottom: 1px solid $color-gray-2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: $font-cairo;
+  font-weight: $font-bold;
+  font-size: $font-size-18;
+  color: $color-text-primary;
+}
+
+.clearBtn {
+  background: transparent;
+  border: none;
+  font-family: $font-primary;
+  font-size: $font-size-14;
+  color: $color-error;
+  cursor: pointer;
+  padding: $spacing-4 $spacing-8;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.items {
+  flex: 1;
+  overflow-y: auto;
+  padding: $spacing-12;
+  max-height: 400px;
+}
+
+.empty {
+  text-align: center;
+  padding: $spacing-40;
+  color: $color-gray-3;
+  font-family: $font-primary;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: $spacing-12;
+  padding: $spacing-12;
+  border-radius: $radius-8;
+  margin-bottom: $spacing-8;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background: rgba($color-gray-2, 0.3);
+  }
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: $radius-8;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-family: $font-cairo;
+  font-weight: $font-semibold;
+  font-size: $font-size-14;
+  color: $color-text-primary;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price {
+  font-family: $font-primary;
+  font-size: $font-size-14;
+  color: $color-gray-3;
+  margin-top: 4px;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: $spacing-4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.footer {
+  padding: $spacing-20;
+  border-top: 1px solid $color-gray-2;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-16;
+  font-family: $font-cairo;
+  font-size: $font-size-16;
+  font-weight: $font-bold;
+}
+
+.totalPrice {
+  color: $color-primary;
+  font-size: $font-size-18;
+}
+
+.checkoutBtn {
+  width: 100%;
+  height: 44px;
+  background: $gradient-button, $color-primary;
+  border: 1px solid $color-primary-hover;
+  border-radius: $radius-8;
+  font-family: $font-primary;
+  font-weight: $font-semibold;
+  font-size: $font-size-16;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

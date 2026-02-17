@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+.menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 200px;
+  background: $color-bg-white;
+  border: 1px solid $color-gray-2;
+  border-radius: $radius-8;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+  overflow: hidden;
+  padding: $spacing-8 0;
+}
+
+.header {
+  padding: $spacing-12 $spacing-16;
+  font-family: $font-cairo;
+  font-weight: $font-semibold;
+  font-size: $font-size-14;
+  color: $color-gray-3;
+  border-bottom: 1px solid $color-gray-2;
+  margin-bottom: $spacing-4;
+}
+
+.item {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: $spacing-12 $spacing-16;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: $font-primary;
+  font-weight: $font-medium;
+  font-size: $font-size-14;
+  color: $color-text-primary;
+  text-align: left;
+
+  &:hover {
+    background: rgba($color-primary, 0.05);
+  }
+
+  &.active {
+    background: rgba($color-primary, 0.1);
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,304 @@
+@import "../../styles/variables.scss";
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-bg-main;
+}
+
+.content {
+  position: relative;
+  width: 527px;
+  background: $color-bg-white;
+  box-shadow: $shadow-card;
+  border-radius: $radius-40;
+  padding: $spacing-6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-32;
+}
+
+.innerCard {
+  width: 100%;
+  background: $gradient-card;
+  border-radius: $radius-34;
+  padding: $spacing-48;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-32;
+}
+
+.logo {
+  width: $logo-size;
+  height: $logo-size;
+  background: $gradient-logo, $color-bg-white;
+  box-shadow: $shadow-logo;
+  border-radius: $radius-100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 35px;
+    height: 34px;
+    object-fit: contain;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-12;
+  width: 100%;
+}
+
+.title {
+  font-family: $font-primary;
+  font-weight: $font-semibold;
+  font-size: $font-size-40;
+  line-height: $line-height-110;
+  text-align: center;
+  letter-spacing: $letter-spacing-tight;
+  color: $color-text-primary;
+}
+
+.subtitle {
+  font-family: $font-primary;
+  font-weight: $font-medium;
+  font-size: $font-size-18;
+  line-height: $line-height-150;
+  text-align: center;
+  color: $color-text-placeholder;
+}
+
+.error {
+  font-family: $font-primary;
+  font-weight: $font-medium;
+  font-size: $font-size-14;
+  text-align: center;
+  color: $color-error;
+  margin-top: $spacing-8;
+}
+
+.hint {
+  font-family: $font-primary;
+  font-weight: $font-regular;
+  font-size: $font-size-14;
+  text-align: center;
+  color: $color-gray-1;
+  margin-top: $spacing-4;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: $spacing-20;
+}
+
+.formFields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-16;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-6;
+}
+
+.label {
+  font-family: $font-primary;
+  font-weight: $font-medium;
+  font-size: $font-size-18;
+  line-height: $line-height-150;
+  letter-spacing: $letter-spacing-tight;
+  color: $color-text-primary;
+}
+
+.input {
+  width: 100%;
+  height: $input-height;
+  background: $color-bg-white;
+  border: 1.5px solid $color-gray-border;
+  border-radius: $radius-12;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: $font-primary;
+    font-weight: $font-medium;
+    font-size: $font-size-18;
+    line-height: $line-height-150;
+    letter-spacing: $letter-spacing-tight;
+    color: $color-text-primary;
+    background: transparent;
+
+    &::placeholder {
+      color: $color-text-primary;
+    }
+  }
+
+  .eyeButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.keep {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $spacing-10;
+
+  input[type="checkbox"] {
+    width: $checkbox-size;
+    height: $checkbox-size;
+    border: 2px solid $color-gray-border;
+    border-radius: $radius-4;
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+    background: $color-bg-white;
+
+    &:checked {
+      background: $color-primary;
+      border-color: $color-primary;
+
+      &::after {
+        content: "✓";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  label {
+    font-family: $font-primary;
+    font-weight: $font-medium;
+    font-size: $font-size-16;
+    line-height: $line-height-150;
+    color: $color-text-disabled;
+    cursor: pointer;
+  }
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-16;
+}
+
+.button {
+  width: 100%;
+  height: $button-height;
+  background: $gradient-button, $color-primary;
+  border: 1px solid $color-primary-hover;
+  box-shadow: $shadow-button;
+  border-radius: $radius-12;
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-8;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  font-family: $font-primary;
+  font-weight: $font-semibold;
+  font-size: $font-size-18;
+  line-height: $line-height-120;
+  letter-spacing: $letter-spacing-small;
+  color: $color-bg-white;
+
+  &:hover:not(:disabled) {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $spacing-10;
+
+  .line {
+    flex: 1;
+    height: 0;
+    border: 1px solid $color-gray-border;
+  }
+
+  .orText {
+    font-family: $font-primary;
+    font-weight: $font-medium;
+    font-size: $font-size-16;
+    line-height: $line-height-150;
+    color: $color-text-light;
+  }
+}
+
+.footer {
+  width: 100%;
+  font-family: $font-primary;
+  font-weight: $font-regular;
+  font-size: $font-size-18;
+  line-height: $line-height-150;
+  text-align: center;
+  color: $color-text-muted;
+
+  .link {
+    color: $color-primary;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

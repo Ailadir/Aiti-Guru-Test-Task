@@ -1,0 +1,147 @@
+// === COLORS ===
+
+// Primary & Accent
+$color-primary: #242edb;
+$color-primary-hover: #367aff;
+$color-accent-blue: #797fea;
+$color-accent-dark: #3c538e;
+
+// Backgrounds
+$color-bg-main: #f9f9f9;
+$color-bg-secondary: #f6f6f6;
+$color-bg-white: #ffffff;
+$color-bg-input: #f3f3f3;
+
+// Text Colors
+$color-text-primary: #232323;
+$color-text-secondary: #202020;
+$color-text-tertiary: #333333;
+$color-text-black: #161919;
+$color-text-dark: #222222;
+$color-text-placeholder: #e0e0e0;
+$color-text-muted: #6c6c6c;
+$color-text-disabled: #9c9c9c;
+$color-text-light: #ebebeb;
+
+// Grays
+$color-gray-1: #999999;
+$color-gray-2: #ececeb;
+$color-gray-3: #b2b3b9;
+$color-gray-4: #969b9f;
+$color-gray-border: #ededed;
+$color-gray-divider: #e2e2e2;
+$color-gray-photo: #c4c4c4;
+$color-gray-icon: #c9c9c9;
+$color-gray-icon-alt: #cacaca;
+
+// Utility Colors
+$color-success: #ebf3ea;
+$color-error: #f11010;
+
+// === TYPOGRAPHY ===
+
+// Font Families
+$font-primary:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  sans-serif;
+$font-cairo: "Cairo", sans-serif;
+$font-open-sans: "Open Sans", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+$font-roboto-mono: "Roboto Mono", monospace;
+
+// Font Weights
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+// Font Sizes
+$font-size-40: 40px;
+$font-size-24: 24px;
+$font-size-20: 20px;
+$font-size-18: 18px;
+$font-size-16: 16px;
+$font-size-14: 14px;
+
+// Line Heights
+$line-height-110: 110%;
+$line-height-120: 120%;
+$line-height-150: 150%;
+$line-height-45: 45px;
+$line-height-30: 30px;
+$line-height-27: 27px;
+$line-height-26: 26px;
+$line-height-24: 24px;
+$line-height-22: 22px;
+$line-height-21: 21px;
+
+// Letter Spacing
+$letter-spacing-tight: -0.015em;
+$letter-spacing-small: -0.01em;
+
+// === SPACING ===
+$spacing-4: 4px;
+$spacing-6: 6px;
+$spacing-8: 8px;
+$spacing-10: 10px;
+$spacing-12: 12px;
+$spacing-14: 14px;
+$spacing-16: 16px;
+$spacing-18: 18px;
+$spacing-20: 20px;
+$spacing-24: 24px;
+$spacing-30: 30px;
+$spacing-32: 32px;
+$spacing-40: 40px;
+$spacing-48: 48px;
+
+// === BORDER RADIUS ===
+$radius-4: 4px;
+$radius-6: 6px;
+$radius-8: 8px;
+$radius-10: 10px;
+$radius-12: 12px;
+$radius-23: 23px;
+$radius-34: 34px;
+$radius-40: 40px;
+$radius-100: 100px;
+
+// === SHADOWS ===
+$shadow-card: 0px 24px 32px rgba(0, 0, 0, 0.04);
+$shadow-button:
+  0px 8px 8px rgba(54, 122, 255, 0.03),
+  inset 0px -2px 0px 1px rgba(0, 0, 0, 0.08);
+$shadow-logo:
+  0px 0px 0px 2px #ffffff,
+  0px 12px 8px rgba(0, 0, 0, 0.03);
+$shadow-pagination: 0px 20px 50px rgba(0, 0, 0, 0.12);
+$shadow-input: inset 0px 4px 4px rgba(0, 0, 0, 0.17);
+
+// === GRADIENTS ===
+$gradient-card: linear-gradient(
+  180deg,
+  rgba(35, 35, 35, 0.03) 0%,
+  rgba(35, 35, 35, 0) 50%
+);
+$gradient-logo: linear-gradient(
+  360deg,
+  rgba(35, 35, 35, 0) 50%,
+  rgba(35, 35, 35, 0.06) 100%
+);
+$gradient-button: linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(255, 255, 255, 0.12) 100%
+);
+
+// === SIZES ===
+$input-height: 55px;
+$button-height: 54px;
+$button-small-height: 42px;
+$checkbox-size: 22px;
+$icon-size: 24px;
+$photo-size: 48px;
+$logo-size: 52px;
